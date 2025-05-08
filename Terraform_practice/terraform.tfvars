@@ -1,0 +1,5 @@
+sa_key_file = "./authorized_key.json"
+cloud_id    = "b1gftl883vfei8uhgnts"
+folder_id   = "b1gqk58qtb98i8h8pro9"
+bucket_name = "my-demo-s3-bucket"
+acl         = "public-read"
