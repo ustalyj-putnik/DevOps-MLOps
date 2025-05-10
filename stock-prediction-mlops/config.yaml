@@ -1,0 +1,26 @@
+model:
+  n_estimators: 300
+  window_size: 30
+
+data:
+  start_date: "2015-01-01"
+  end_date: "2020-01-01"
+  ticker: "GOOG"
+
+s3:
+  endpoint_url: "http://minio:9000"
+  bucket_name: "YOUR_BUCKET_NAME"
+  access_key: "YOUR_S3_ACCESS_KEY"
+  secret_key: "YOUR_S3_SECRET_KEY"
+
+mlflow:
+  tracking_uri: "http://mlflow:5000"
+  experiment_name: "StockPricePrediction"
+
+lakefs:
+  endpoint: "http://lakefs:8000"
+  access_key: "YOUR_LAKEFS_ACCESS_KEY"
+  secret_key: "YOUR_LAKEFS_SECRET_KEY"
+  repository: "stocks"
+  s3_bucket: "YOUR_BUCKET_NAME"
+  branch: "main"
